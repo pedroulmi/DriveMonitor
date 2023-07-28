@@ -1,0 +1,35 @@
+﻿<Window x:Name="window" x:Class="application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:application"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600
+        " Width="800">
+
+    <Border Background="#272537">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+        
+            
+            <ScrollViewer Grid.Row="1" Margin="0 0 0 0">
+                <StackPanel x:Name="spDiskList" Margin="0 20 0 20"/>
+            </ScrollViewer>
+
+            <TreeView x:Name="tvFolderDiscovery" Grid.Column="2">
+            </TreeView>
+            <WrapPanel Grid.Column="1"/>
+
+        </Grid>
+
+    </Border>
+</Window>
